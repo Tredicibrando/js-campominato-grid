@@ -40,6 +40,10 @@ button:active{
     background-color: #ddd;
 }
 
+.active{
+    display: block;
+}
+
 
 
 
@@ -60,10 +64,13 @@ button:active{
     width: 500px;
     height: 500px;
     display: flex;
-    flex-direction: flex-start;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.grid.active{
 }
 
 .grid-item{
