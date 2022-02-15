@@ -4,4 +4,76 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header img{
+    width: 55px;
+}
+
+header select{
+   width: 200px;
+   padding: 5px 0;
+   margin-right: 25px;
+}
+
+header button{
+    padding: 10px 15px;
+    border-radius: 999px;
+    border: none;
+}
+
+button:active{
+    background-color: #ddd;
+}
+
+
+
+
+.header-item{
+    display: flex;
+    align-items: center;
+}
+
+.grid-wrapper{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcd260;
+}
+
+.grid{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.grid-item{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid whitesmoke;
+}
+
+.click{
+    background-color: rgb(0, 119, 255);
 }
