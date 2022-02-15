@@ -1,11 +1,12 @@
 console.log('ciao')
 
-// imposto ciclo for per generare i numeri partendo da 10x10
+// variabili e listener
 const gridContainer = document.querySelector('.grid')
 const numeri = [];
 let contatore = 0;
-
 const button = document.getElementById('btn')
+const gridWrapper = document.querySelector('.grid-wrapper')
+
 const indexLevel = document.getElementById('level')
 
     indexLevel.addEventListener('click', function(){
@@ -14,6 +15,7 @@ const indexLevel = document.getElementById('level')
                 // gridContainer.classList.add('active')
                 remove();
                 generatore10();
+                
             })
         }
 
@@ -22,6 +24,7 @@ const indexLevel = document.getElementById('level')
                 // gridContainer.classList.add('active')
                 remove();
                 generatore9 ();
+                
             })
         }
 
@@ -30,14 +33,20 @@ const indexLevel = document.getElementById('level')
                 // gridContainer.classList.add('active')
                 remove();
                 generatore7();
+                
             })
         }
     })
 
+
+
+    // funzione che mi rimuove il vecchio html
 function remove(contentToRemove) {
     contentToRemove = gridContainer;
     gridContainer.innerHTML = ``
 }
+
+// funzioni che mi generano l'html
 
 function generatore10 (){
     for (let i = 1; i <= 100; i++ ) {
@@ -66,7 +75,7 @@ function generatore10 (){
 }
 
 function generatore9 (){
-    for (let i = 1; i <= 100; i++ ) {
+    for (let i = 1; i <= 81; i++ ) {
 
         contatore = i;
         numeri.push(contatore)
@@ -92,7 +101,7 @@ function generatore9 (){
 }
 
 function generatore7 (){
-    for (let i = 1; i <= 100; i++ ) {
+    for (let i = 1; i <= 49; i++ ) {
 
         contatore = i;
         numeri.push(contatore)

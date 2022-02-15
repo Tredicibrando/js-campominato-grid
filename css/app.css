@@ -70,17 +70,24 @@ button:active{
     flex-shrink: 1;
 }
 
-.grid.active{
-}
 
 .grid-item{
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid whitesmoke;
+    cursor: pointer;
+    /* border: 1px solid whitesmoke; */
 }
 
 .click{
-    background-color: rgb(0, 119, 255);
+    background-color: rgb(101, 103, 241);
+}
+
+.bg-color-pink{
+    background-color: rgb(240, 83, 174);
+}
+
+.bg-color-lightblue{
+    background-color: rgb(123, 189, 247);
 }
